@@ -7,6 +7,8 @@ crawl.py
 run_extract.py
 - asm decompile 코드
 - dump_instructions.py 랑 같은 위치에 있어야됨
+- 결과 ex)
+- {"func_id":"FUN_004082c0::004082c0","instrs":["SUB RSP,0x28","CALL 0x00408210","TEST RAX,RAX","SETZ AL","MOVZX EAX,AL","NEG EAX","ADD RSP,0x28","RET"]}
 
 fun_preprocess.py 
 - ["FUN_", "Catch@", "Unwind@", "Catch_All@", "thunk_FUN_"] 로 시작하는 함수 제거
