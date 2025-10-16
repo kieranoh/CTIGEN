@@ -1,0 +1,27 @@
+{
+    "GetAuths": [
+        "The sample will try to find the token in Discord’s log files and tries to validate it through Discord’s API (https[:]//discord.com/api/v8/users/@me).",
+        "And extract any useful information it has, including the victim’s MFA code."
+    ],
+    "ParseLog": [
+        "The sample will try to find the token in Discord’s log files and tries to validate it through Discord’s API (https[:]//discord.com/api/v8/users/@me)."
+    ],
+    "CheckToken": [
+        "Finally, before sending the token back to the C2, it will try to validate it through Discord’s API."
+    ],
+    "GetSessionFiles": [
+        "The following method will read any session Steam files to obtain the username, installed apps, cookies and password if it has been saved."
+    ],
+    "GetLoginFromCookies": [
+        "The sample will also try to use any Steam related cookies it might have obtained, to send a GET request to Steam, in an attempt to validate the cookies it has gotten.",
+        "If successful, it will send back the cookie, email associated with that account, username, and balance in Steam wallet."
+    ],
+    "GetCookies": [
+        "The way it does this, is simply by running SQL queries on the Chromium DB.",
+        "Like a lot of other “stealers”, this malware will try to extract the following data from Chromium DB: Cookies, Credit cards, Logins"
+    ],
+    "GetCreditCards": [
+        "The way it does this, is simply by running SQL queries on the Chromium DB.",
+        "Like a lot of other “stealers”, this malware will try to extract the following data from Chromium DB: Cookies, Credit cards, Logins"
+    ]
+}

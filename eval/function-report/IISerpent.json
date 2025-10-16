@@ -1,0 +1,6 @@
+{
+    "FUN_10009a60": [
+        "IISerpent recognizes search engine crawler requests by parsing the User-Agent header and looking for specific substrings. push    offset aUserAgent     ; \"User-Agent\" mov     ecx, edi mov     edx, [eax+IHttpRequestVtbl.GetHeader] call    edx push    offset aSpider        ; \"spider\" lea     ecx, [ebp+userAgentHeaderValue] ; Str call    findSubstring push    offset aBot           ; \"bot\" lea     ecx, [ebp+userAgentHeaderValue] ; Str call    findSubstring",
+        "If the redirecturl field is configured, the malware redirects all requests with the strings spider or bot in the User-Agent header to this URL by setting the Location header in the HTTP response."
+    ]
+}

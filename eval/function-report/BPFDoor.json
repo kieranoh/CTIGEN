@@ -1,0 +1,10 @@
+{
+    "FUN_00401380": [
+        "When executed, the BPFdoor sample will attempt to create and get a lock on a runtime file at “/var/run/initd.lock” and will exit if it fails using that file as a makeshift mutex.",
+        "Having set up the above, BPFdoor then allocates a memory buffer and creates a socket as follows: int32_t socket(enum __socket_domain domain, enum __socket_type type, int32_t protocol) 00401370  return socket(domain: domain, type: type, protocol: protocol) __tailcall call    malloc // protocol mov     edx, 0x300 // type mov     esi, 0x3 // domain mov     edi, 0x11 mov     rbx, rax call    socket",
+        "And will read from it in a loop (further described below) using recvfrom: ssize_t recvfrom(int32_t fd, void* buf, size_t len, int32_t flags, union __SOCKADDR_ARG addr, socklen_t* addrlen) 00401250  return recvfrom(fd: fd, buf: buf, len: len, flags: flags, addr: addr, addrlen: addrlen) __tailcall"
+    ],
+    "FUN_00401a30": [
+        "It will proceed to specify the following socket options using setsockopt: int32_t setsockopt(int32_t sockfd, int32_t level, int32_t optname, void const* optval, socklen_t optlen) 004010a0  return setsockopt(sockfd: sockfd, level: level, optname: optname, optval: optval, optlen: optlen) __tailcall mov     ecx, 0x1e        // optlen mov     r8d, 0x10 rep movsq qword [rdi], [rsi]   {0x0} // optname mov     edx, 0x1a mov     rcx, rsp {var_108}     // optval // level mov     esi, 0x1 mov     edi, r9d              // fd mov     qword [rsp+0x8 {var_100}], rax {var_f8} call    setsockopt"
+    ]
+}

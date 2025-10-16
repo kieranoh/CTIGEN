@@ -1,0 +1,1766 @@
+[
+    {
+        "Indicator": "Contains ability to enumerate files on disk (API string): Found reference to API \"FindNextFileA\" (Indicator: \"FindNextFile\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"FindFirstFileExA\" (Indicator: \"FindFirstFile\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"FindNextFileA\" (Indicator: \"FindNextFile\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"FindFirstFileExA\" (Indicator: \"FindFirstFile\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68140385,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75218806,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70031678,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to read the PEB (Process Environment Block) structure: \"sample.bin\" can read PEB structure (dword ptr fs:[00000030h]) (Offset: 21973)",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.73619729,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75895,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72730806,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to check debugger is running (API string): Found reference to API \"GetTickCount64\" (Indicator: \"GetTickCount\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"OutputDebugStringW\" (Indicator: \"OutputDebugString\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"QueryPerformanceCounter\" (Indicator: \"QueryPerformanceCounter\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"IsDebuggerPresent\" (Indicator: \"IsDebuggerPresent\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68737023,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.77287581,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71145603,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to impersonate access tokens (API string): Found reference to API \"NtOpenProcessToken\" (Indicator: \"OpenProcessToken\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.72391424,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.77064715,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72094864,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to execute an application (API string): Found reference to API \"ShellExecuteW\" (Indicator: \"ShellExecute\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00000368.00000000.173884.009C0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00001356.00000000.177745.00900000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00001576.00000000.171956.030D0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00002612.00000000.179672.03120000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00003264.00000000.181601.03360000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00003288.00000000.183533.00CE0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00003424.00000000.175816.00450000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00003560.00000000.185463.00CF0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00003568.00000000.175819.00880000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00003596.00000000.175819.03190000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00003628.00000000.175815.03540000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00003984.00000000.185465.02E70000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00004252.00000000.179673.03050000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00004324.00000000.179673.03020000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00004332.00000000.177746.00780000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00004344.00000000.183535.03090000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00004360.00000000.181602.033B0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00004544.00000000.181603.006F0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00004808.00000000.185495.02E90000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00005036.00000000.171954.00740000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00005268.00000000.177749.008B0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00005736.00000000.181612.030B0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00006532.00000000.183536.007C0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"WinExec\"/>\" (Indicator: \"WinExec\"; Source: \"00000000-00006872.00000000.179680.02DD0000.00000004.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.70060398,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.7765575,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70928595,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Calls an API typically used for taking snapshot of the specified processes: \"rundll32.exe\" called \"CreateToolhelp32Snapshot\" with parameters {\"dwFlags\": \"4\"\n \"th32ProcessID\": \"0\"}",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68370803,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.71504593,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.66971215,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve open application windows (API string): Found reference to API \"GetForegroundWindow\" (Indicator: \"GetForegroundWindow\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetForegroundWindow\" (Indicator: \"GetForegroundWindow\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.67997642,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.73431713,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69098374,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Able to retrieve/open a process (API string): Found string \"NtOpenProcessToken\" (Indicator: \"OpenProcess\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.72634082,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.74978914,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70870338,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to show a graphical window (API string): Found reference to API \"ShowWindow\" (Indicator: \"ShowWindow\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"ShowWindow\" (Indicator: \"ShowWindow\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.67776324,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.74780715,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.68968379,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to register a top-level exception handler (API string): Found reference to API \"SetUnhandledExceptionFilter\" (Indicator: \"SetUnhandledExceptionFilter\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"SetUnhandledExceptionFilter\" (Indicator: \"UnhandledExceptionFilter\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"UnhandledExceptionFilter\" (Indicator: \"UnhandledExceptionFilter\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.67414014,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75233532,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72302567,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Able to identify virtual environment by using user activity (API string): Found string \"GetCommandLineA\" (Indicator: \"GetCommandLine\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found string \"GetCommandLineW\" (Indicator: \"GetCommandLine\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found string \"GetCommandLineW\" (Indicator: \"GetCommandLine\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found string \"GetCommandLineA\" (Indicator: \"GetCommandLine\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found string \"GetCommandLineW\" (Indicator: \"GetCommandLine\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69621697,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75365795,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71597395,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve usernames and/or user information (API string): Found reference to API \"NtQuerySystemInformation\" (Indicator: \"NtQuerySystemInformation\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"NtQueryInformationToken\" (Indicator: \"NtQueryInformationToken\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"NtOpenProcessToken\" (Indicator: \"NtOpenProcessToken\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"NtOpenProcessToken\" (Indicator: \"OpenProcessToken\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.71194521,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76466874,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71144954,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Found a string that may be used as part of an injection method: \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00000368.00000000.173884.02EE0000.00000002.mdmp\n \"!Progman\" (Program manager) in Source: 00000000-00000368.00000000.173884.02EE0000.00000002.mdmp\n \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00001356.00000000.177745.02E60000.00000002.mdmp\n \"!Progman\" (Program manager) in Source: 00000000-00001356.00000000.177745.02E60000.00000002.mdmp\n \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00002612.00000000.179672.03730000.00000002.mdmp\n \"!Progman\" (Program manager) in Source: 00000000-00002612.00000000.179672.03730000.00000002.mdmp\n \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00003264.00000000.181601.03670000.00000002.mdmp\n \"!Progman\" (Program manager) in Source: 00000000-00003264.00000000.181601.03670000.00000002.mdmp\n \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00003288.00000000.183533.03450000.00000002.mdmp\n \"!Progman\" (Program manager) in Source: 00000000-00003288.00000000.183533.03450000.00000002.mdmp\n \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00003424.00000000.175816.02CD0000.00000002.mdmp\n \"!Progman\" (Program manager) in Source: 00000000-00003424.00000000.175816.02CD0000.00000002.mdmp\n \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00003596.00000000.175819.03630000.00000002.mdmp\n \"!Progman\" (Program manager) in Source: 00000000-00003596.00000000.175819.03630000.00000002.mdmp\n \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00004324.00000000.179673.03600000.00000002.mdmp\n \"!Progman\" (Program manager) in Source: 00000000-00004324.00000000.179673.03600000.00000002.mdmp\n \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00004344.00000000.183535.036F0000.00000002.mdmp\n \"!Progman\" (Program manager) in Source: 00000000-00004344.00000000.183535.036F0000.00000002.mdmp\n \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00004544.00000000.181603.02E60000.00000002.mdmp\n \"!Progman\" (Program manager) in Source: 00000000-00004544.00000000.181603.02E60000.00000002.mdmp\n \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00004808.00000000.185495.031A0000.00000002.mdmp\n \"!Progman\" (Program manager) in Source: 00000000-00004808.00000000.185495.031A0000.00000002.mdmp\n \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00005036.00000000.171954.02CD0000.00000002.mdmp\n \"!Progman\" (Program manager) in Source: 00000000-00005036.00000000.171954.02CD0000.00000002.mdmp\n \"Shell_TrayWnd\" (Taskbar window class may be used to inject into explorer with the SetWindowLong method) in Source: 00000000-00005736.00000000.181612.033C0000.00000002.mdmp",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68946716,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.74049567,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71673029,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve system language (API string): Found reference to API \"GetSystemDefaultLangID\" (Indicator: \"GetSystemDefaultLangID\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetSystemDefaultUILanguage\" (Indicator: \"GetSystemDefaultUILanguage\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetUserDefaultLangID\" (Indicator: \"GetUserDefaultLangID\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetSystemDefaultUILanguage\" (Indicator: \"GetSystemDefaultUILanguage\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetUserDefaultLangID\" (Indicator: \"GetUserDefaultLangID\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetSystemDefaultLangID\" (Indicator: \"GetSystemDefaultLangID\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68003139,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75288037,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69872785,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains reference to mutex-related activity (API string): Found reference to API \"ReleaseMutex\" (Indicator: \"ReleaseMutex\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"CreateMutexExW\" (Indicator: \"CreateMutex\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.6946573,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.73490547,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.688136,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to perform decryption (API string): Found reference to API \"CryptDecrypt\" (Indicator: \"CryptDecrypt\"; Source: \"00000000-00000368.00000000.173884.009C0000.00000004.mdmp\")\n Found reference to API \"CryptDecrypt\" (Indicator: \"CryptDecrypt\"; Source: \"00000000-00001576.00000000.171956.030D0000.00000004.mdmp\")\n Found reference to API \"CryptDecrypt\" (Indicator: \"CryptDecrypt\"; Source: \"00000000-00003264.00000000.181601.03360000.00000004.mdmp\")\n Found reference to API \"CryptDecrypt\" (Indicator: \"CryptDecrypt\"; Source: \"00000000-00003288.00000000.183533.00CE0000.00000004.mdmp\")\n Found reference to API \"CryptDecrypt\" (Indicator: \"CryptDecrypt\"; Source: \"00000000-00003568.00000000.175819.00880000.00000004.mdmp\")\n Found reference to API \"CryptDecrypt\" (Indicator: \"CryptDecrypt\"; Source: \"00000000-00004808.00000000.185495.02E90000.00000004.mdmp\")\n Found reference to API \"CryptDecrypt\" (Indicator: \"CryptDecrypt\"; Source: \"00000000-00005036.00000000.171954.00740000.00000004.mdmp\")\n Found reference to API \"CryptDecrypt\" (Indicator: \"CryptDecrypt\"; Source: \"00000000-00007148.00000000.171956.00980000.00000004.mdmp\")\n Found reference to API \"CryptDecrypt\" (Indicator: \"CryptDecrypt\"; Source: \"00000000-00007444.00000000.183552.00680000.00000004.mdmp\")\n Found reference to API \"CryptDecrypt\" (Indicator: \"CryptDecrypt\"; Source: \"00000000-00008404.00000000.173885.00900000.00000004.mdmp\")\n Found reference to API \"CryptDecrypt\" (Indicator: \"CryptDecrypt\"; Source: \"00000000-00008932.00000000.171953.031A0000.00000004.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.74902575,
+                "Label": 1
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.79624465,
+                "Label": 1
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72078963,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "File contains dynamic base/NX flags: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\" has flags like  IMAGE_DLLCHARACTERISTICS_DYNAMIC_BASE\n IMAGE_DLLCHARACTERISTICS_NX_COMPAT",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.70746883,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75764838,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72492543,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Loads modules at runtime: \"rundll32.exe\" loaded module \"API-MS-WIN-CORE-SYNCH-L1-2-0\" at base 74930000\n \"rundll32.exe\" loaded module \"API-MS-WIN-CORE-FIBERS-L1-1-1\" at base 74930000\n \"rundll32.exe\" loaded module \"API-MS-WIN-CORE-LOCALIZATION-L1-2-1\" at base 74930000\n \"rundll32.exe\" loaded module \"KERNEL32\" at base 74e30000\n \"rundll32.exe\" loaded module \"%WINDIR%\\TEMP\\VXOLE32.DLL\" at base 72b40000\n \"rundll32.exe\" loaded module \"API-MS-WIN-CORE-STRING-L1-1-0\" at base 74930000\n \"rundll32.exe\" loaded module \"API-MS-WIN-CORE-DATETIME-L1-1-1\" at base 74930000\n \"rundll32.exe\" loaded module \"API-MS-WIN-CORE-LOCALIZATION-OBSOLETE-L1-2-0\" at base 74930000",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.71310402,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75987943,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70352289,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve a module handle (API string): Found reference to API \"GetModuleHandleW\" (Indicator: \"GetModuleHandle\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetModuleHandleExW\" (Indicator: \"GetModuleHandle\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetModuleHandleExW\" (Indicator: \"GetModuleHandle\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetModuleHandleW\" (Indicator: \"GetModuleHandle\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetModuleHandleW\" (Indicator: \"GetModuleHandle\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetModuleHandleExW\" (Indicator: \"GetModuleHandle\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69856425,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75693469,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69373348,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Process launched with changed environment: Process \"rundll32.exe\" (UID: 00000000-00008932) was launched with new environment variables: \"PROCESSOR_ARCHITEW6432=\"AMD64\"\"\n Process \"rundll32.exe\" (UID: 00000000-00008932) was launched with modified environment variables: \"PROCESSOR_ARCHITECTURE, CommonProgramFiles, ProgramFiles\"",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.70163652,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.73020737,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70146585,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Making HTTPS connections using secure TLS/SSL version: Connection was made using TLSv1.2 [tls.handshake.version: 0x0303]",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.74158998,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.73320357,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70932666,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Calls an API typically used to retrieve computer name: \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00008932)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00005036)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00007148)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00001576)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00008812)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00000368)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00008404)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00008808)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00003628)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00003568)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00003424)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00003596)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00001356)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00005268)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00004332)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00008200)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00002612)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00004252)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00004324)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00006872)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00003264)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00004360)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00004544)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00005736)\n \"rundll32.exe\" called \"GetComputerNameW\" (UID: 00000000-00003288)",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68584667,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.72213831,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.68258873,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Queries basic information of the specified process: \"rundll32.exe\" queries basic process information of the  \"C:\\Windows\\SysWOW64\\rundll32.exe\" (UID: 8932)",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.71188238,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.73972416,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69710481,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to delay execution by waiting for signal/timeout (API string): Found reference to API \"GetSystemTimeAsFileTime\" (Indicator: \"GetSystemTimeAsFileTime\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetTickCount64\" (Indicator: \"GetTickCount64\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"QueryPerformanceCounter\" (Indicator: \"QueryPerformanceCounter\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"SetTimer\" (Indicator: \"SetTimer\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"WaitForSingleObject\" (Indicator: \"WaitForSingleObject\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"WaitForSingleObjectEx\" (Indicator: \"WaitForSingleObject\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"WaitForSingleObjectEx\" (Indicator: \"WaitForSingleObjectEx\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"QueryPerformanceCounter\" (Indicator: \"QueryPerformanceCounter\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetSystemTimeAsFileTime\" (Indicator: \"GetSystemTimeAsFileTime\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"NtQuerySystemInformation\" (Indicator: \"NtQuerySystemInformation\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetTickCount64\" (Indicator: \"GetTickCount64\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"SetTimer\" (Indicator: \"SetTimer\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"QueryPerformanceCounter\" (Indicator: \"QueryPerformanceCounter\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetSystemTimeAsFileTime\" (Indicator: \"GetSystemTimeAsFileTime\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69612517,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76686344,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71493938,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve file and directory information (API string): Found reference to API \"GetFileInformationByHandleEx\" (Indicator: \"GetFileInformationByHandle\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetSystemDirectoryW\" (Indicator: \"GetSystemDirectory\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetFileAttributesW\" (Indicator: \"GetFileAttributes\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetFileInformationByHandleEx\" (Indicator: \"GetFileInformationByHandle\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69097705,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76205787,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.68943828,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Spawns new processes that are not known child processes: Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00005036), Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00007148)\n Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00001576), Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00008812)\n Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00000368), Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00008404)\n Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00008808), Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00003628)\n Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00003568), Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00003424)\n Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00003596), Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00001356)\n Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00005268), Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00004332)\n Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00008200), Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00002612)\n Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00004252), Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00004324)\n Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00006872), Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00003264)\n Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00004360), Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00004544)\n Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00005736), Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00003288)\n Spawned process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad1 ...\" (UID: 00000000-00004344)",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69875074,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.72859088,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70263445,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to find logical drives of the machine (API string): Found reference to API \"GetLogicalDrives\" (Indicator: \"GetLogicalDrives\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetLogicalDrives\" (Indicator: \"GetLogicalDrives\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69759639,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.74831673,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.6953895,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to modify process attributes (API string): Found reference to API \"SetProcessMitigationPolicy\" (Indicator: \"SetProcessMitigationPolicy\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.70662034,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.7464263,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69565098,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve the time elapsed since the system was started (API string): Found reference to API \"GetTickCount64\" (Indicator: \"GetTickCount\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetTickCount\" (Indicator: \"GetTickCount\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetTickCount64\" (Indicator: \"GetTickCount\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69647213,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.74876672,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69061297,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to perform scheduled transfer (API string): Found reference to API \"GetSystemTimeAsFileTime\" (Indicator: \"GetSystemTime\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetSystemTimePreciseAsFileTime\" (Indicator: \"GetSystemTime\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetSystemTimeAsFileTime\" (Indicator: \"GetSystemTime\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetSystemTimePreciseAsFileTime\" (Indicator: \"GetSystemTime\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetSystemTimeAsFileTime\" (Indicator: \"GetSystemTime\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68686623,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76183412,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70252391,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to set/get the last-error code for a calling thread (API string): Found reference to API \"GetLastError\" (Indicator: \"GetLastError\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"SetLastError\" (Indicator: \"SetLastError\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"SetLastError\" (Indicator: \"SetLastError\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetLastError\" (Indicator: \"GetLastError\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetLastError\" (Indicator: \"GetLastError\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"SetLastError\" (Indicator: \"SetLastError\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.67147135,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.73097832,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69202552,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Touches files: \"rundll32.exe\" trying to touch file \"C:\\Windows\\System32\\WOW64LOG.DLL\"\n \"rundll32.exe\" trying to touch file \"C:\\Windows\\SysWOW64\\apphelp.dll\"\n \"rundll32.exe\" trying to touch file \"C:\\Windows\\SysWOW64\\rundll32.exe\"\n \"rundll32.exe\" trying to touch file \"C:\\Windows\\SysWOW64\\ntdll.dll\"\n \"rundll32.exe\" trying to touch file \"C:\\Windows\\SysWOW64\\kernel32.dll\"\n \"rundll32.exe\" trying to touch file \"C:\\Windows\\SysWOW64\\KernelBase.dll\"\n \"rundll32.exe\" trying to touch file \"C:\\Windows\\apppatch\\sysmain.sdb\"\n \"rundll32.exe\" trying to touch file \"C:\\Windows\\SysWOW64\\AcLayers.dll\"\n \"rundll32.exe\" trying to touch file \"C:\\Windows\\SysWOW64\\mpr.dll\"\n \"rundll32.exe\" trying to touch file \"C:\\Windows\\SysWOW64\\sfc.dll\"",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68402408,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.72069935,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.67934178,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve the fully qualified path of module (API string): Found reference to API \"GetModuleFileNameA\" (Indicator: \"GetModuleFileName\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetModuleFileNameW\" (Indicator: \"GetModuleFileName\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetModuleFileNameA\" (Indicator: \"GetModuleFileName\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetModuleFileNameW\" (Indicator: \"GetModuleFileName\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetModuleFileNameA\" (Indicator: \"GetModuleFileName\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.6762534,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76256872,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70565599,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to create/open files (API string): Found reference to API \"CreateFileW\" (Indicator: \"CreateFile\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"CreateFileW\" (Indicator: \"CreateFile\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"CreateFileW\" (Indicator: \"CreateFile\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69590537,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76280613,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69373637,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to terminate a process (API string): Found reference to API \"ExitProcess\" (Indicator: \"ExitProcess\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"TerminateProcess\" (Indicator: \"TerminateProcess\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"CorExitProcess\" (Indicator: \"ExitProcess\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"ExitProcess\" (Indicator: \"ExitProcess\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"TerminateProcess\" (Indicator: \"TerminateProcess\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"CorExitProcess\" (Indicator: \"ExitProcess\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"TerminateProcess\" (Indicator: \"TerminateProcess\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"ExitProcess\" (Indicator: \"ExitProcess\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68716678,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76977814,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71485014,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to create/load registry keys (API string): Found reference to API \"RegCreateKeyExW\" (Indicator: \"RegCreateKey\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"RegCreateKeyTransactedW\" (Indicator: \"RegCreateKey\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"RegCreateKeyTransactedW\" (Indicator: \"RegCreateKeyTransacted\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"RegCreateKeyTransactedW\" (Indicator: \"RegCreateKey\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"RegCreateKeyTransactedW\" (Indicator: \"RegCreateKeyTransacted\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"RegCreateKeyExW\" (Indicator: \"RegCreateKey\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69185916,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75237475,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70011949,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Calls an API typically used to get product type: \"rundll32.exe\" called \"RtlGetNtProductType\" with parameter 01000000 (UID: 00000000-00004344)",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.71459917,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.72784464,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70425781,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve the contents of the STARTUPINFO structure (API string): Found reference to API \"GetStartupInfoW\" (Indicator: \"GetStartupInfo\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.70450377,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76505566,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.6864289,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "JA3 SSL client fingerprint: Observed JA3 fingerprint: bd0bf25947d4a37404f0424edf4db9ad\n Observed JA3 fingerprint: 3b5074b1b5d032e5620f69f9f700ff0e\n Observed JA3 fingerprint: 1fc1c530fdab845a0a2b05d0b5335bcb",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.71914144,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.71274638,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71563877,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "CRC value set in PE header does not match actual value: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\" claimed CRC 527971 while the actual is CRC 512797",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.74853328,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76352855,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72978917,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to write files (API string): Found reference to API \"WriteFile\" (Indicator: \"WriteFile\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"WriteFile\" (Indicator: \"WriteFile\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68980168,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.77680257,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69929558,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to create a new process (API string): Found reference to API \"levateCreateProcess\" (Indicator: \"CreateProcess\"; Source: \"00000000-00000368.00000000.173884.009C0000.00000004.mdmp\")\n Found reference to API \"<SHIM NAME=\"ElevateCreateProcess\" COMMAND_LINE=\"NoManifestCheck\">\" (Indicator: \"CreateProcess\"; Source: \"00000000-00000368.00000000.173884.009C0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"CreateProcessA\"/>\" (Indicator: \"CreateProcess\"; Source: \"00000000-00000368.00000000.173884.009C0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"CreateProcessW\"/>\" (Indicator: \"CreateProcess\"; Source: \"00000000-00000368.00000000.173884.009C0000.00000004.mdmp\")\n Found reference to API \"levateCreateProcess\" (Indicator: \"CreateProcess\"; Source: \"00000000-00001356.00000000.177745.00900000.00000004.mdmp\")\n Found reference to API \"<SHIM NAME=\"ElevateCreateProcess\" COMMAND_LINE=\"NoManifestCheck\">\" (Indicator: \"CreateProcess\"; Source: \"00000000-00001356.00000000.177745.00900000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"CreateProcessA\"/>\" (Indicator: \"CreateProcess\"; Source: \"00000000-00001356.00000000.177745.00900000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"CreateProcessW\"/>\" (Indicator: \"CreateProcess\"; Source: \"00000000-00001356.00000000.177745.00900000.00000004.mdmp\")\n Found reference to API \"levateCreateProcess\" (Indicator: \"CreateProcess\"; Source: \"00000000-00001576.00000000.171956.030D0000.00000004.mdmp\")\n Found reference to API \"<SHIM NAME=\"ElevateCreateProcess\" COMMAND_LINE=\"NoManifestCheck\">\" (Indicator: \"CreateProcess\"; Source: \"00000000-00001576.00000000.171956.030D0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"CreateProcessA\"/>\" (Indicator: \"CreateProcess\"; Source: \"00000000-00001576.00000000.171956.030D0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"CreateProcessW\"/>\" (Indicator: \"CreateProcess\"; Source: \"00000000-00001576.00000000.171956.030D0000.00000004.mdmp\")\n Found reference to API \"levateCreateProcess\" (Indicator: \"CreateProcess\"; Source: \"00000000-00002612.00000000.179672.03120000.00000004.mdmp\")\n Found reference to API \"<SHIM NAME=\"ElevateCreateProcess\" COMMAND_LINE=\"NoManifestCheck\">\" (Indicator: \"CreateProcess\"; Source: \"00000000-00002612.00000000.179672.03120000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"CreateProcessA\"/>\" (Indicator: \"CreateProcess\"; Source: \"00000000-00002612.00000000.179672.03120000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"CreateProcessW\"/>\" (Indicator: \"CreateProcess\"; Source: \"00000000-00002612.00000000.179672.03120000.00000004.mdmp\")\n Found reference to API \"levateCreateProcess\" (Indicator: \"CreateProcess\"; Source: \"00000000-00003264.00000000.181601.03360000.00000004.mdmp\")\n Found reference to API \"<SHIM NAME=\"ElevateCreateProcess\" COMMAND_LINE=\"NoManifestCheck\">\" (Indicator: \"CreateProcess\"; Source: \"00000000-00003264.00000000.181601.03360000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"CreateProcessA\"/>\" (Indicator: \"CreateProcess\"; Source: \"00000000-00003264.00000000.181601.03360000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"CreateProcessW\"/>\" (Indicator: \"CreateProcess\"; Source: \"00000000-00003264.00000000.181601.03360000.00000004.mdmp\")\n Found reference to API \"levateCreateProcess\" (Indicator: \"CreateProcess\"; Source: \"00000000-00003288.00000000.183533.00CE0000.00000004.mdmp\")\n Found reference to API \"<SHIM NAME=\"ElevateCreateProcess\" COMMAND_LINE=\"NoManifestCheck\">\" (Indicator: \"CreateProcess\"; Source: \"00000000-00003288.00000000.183533.00CE0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"CreateProcessA\"/>\" (Indicator: \"CreateProcess\"; Source: \"00000000-00003288.00000000.183533.00CE0000.00000004.mdmp\")\n Found reference to API \"<HOOK MODULE=\"KERNEL32.DLL\" FUNCTION=\"CreateProcessW\"/>\" (Indicator: \"CreateProcess\"; Source: \"00000000-00003288.00000000.183533.00CE0000.00000004.mdmp\")\n Found reference to API \"levateCreateProcess\" (Indicator: \"CreateProcess\"; Source: \"00000000-00003424.00000000.175816.00450000.00000004.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69736113,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.7639727,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71448381,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Able to identify virtual environment by using API string: Found string \"NtQuerySystemInformation\" (Indicator: \"NtQuerySystemInformation\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.72419452,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75344379,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72091629,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Shows ability to use execution guardrails: The analysis shows indicators which can be used as execution guardrails to ensure that payload only executes against intended targets/system. Matched sigs: Able to identify virtual environment by using API string\n Matched sigs: The input sample possibly contains the RDTSCP instruction\n Matched sigs: Contains ability to delay execution by waiting for signal/timeout (API string)\n Matched sigs: Contains ability to retrieve the time elapsed since the system was started (API string)\n Matched sigs: Able to identify virtual environment by using user activity (API string)",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.71058557,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.78983562,
+                "Label": 1
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71892972,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Executes a DLL using Rundll32 process: Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#1\" (UID: 00000000-00008932)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#2\" (UID: 00000000-00005036)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#3\" (UID: 00000000-00007148)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#4\" (UID: 00000000-00001576)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#6\" (UID: 00000000-00008812)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#5\" (UID: 00000000-00000368)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#8\" (UID: 00000000-00008404)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#7\" (UID: 00000000-00008808)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#9\" (UID: 00000000-00003628)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#12\" (UID: 00000000-00003568)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#10\" (UID: 00000000-00003424)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#11\" (UID: 00000000-00003596)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#13\" (UID: 00000000-00001356)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#15\" (UID: 00000000-00005268)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#16\" (UID: 00000000-00004332)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#14\" (UID: 00000000-00008200)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#17\" (UID: 00000000-00002612)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#18\" (UID: 00000000-00004252)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#19\" (UID: 00000000-00004324)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#20\" (UID: 00000000-00006872)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#21\" (UID: 00000000-00003264)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#22\" (UID: 00000000-00004360)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#23\" (UID: 00000000-00004544)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#24\" (UID: 00000000-00005736)\n Process \"rundll32.exe\" with commandline \"\"C:\\\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll\",#25\" (UID: 00000000-00003288)",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.70014218,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.71951316,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69256669,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Loads the RPC (Remote Procedure Call) module DLL: \"rundll32.exe\" loaded module \"%WINDIR%\\SysWOW64\\rpcrt4.dll\" at 75500000",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.72488488,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.74203846,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70740782,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Tries to access non-existent files (non-executable): \"rundll32.exe\" trying to access non-existent file \"C:\\76816BA1A506EBA7151BCE38B3E6D673362355063C8FD92444B6BEC5AD106C21.DLL.MANIFEST\"\n \"rundll32.exe\" trying to access non-existent file \"C:\\76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.dll.manifest\"\n \"rundll32.exe\" trying to access non-existent file \"C:\\76816BA1A506EBA7151BCE38B3E6D673362355063C8FD92444B6BEC5AD106C21.DLL.123.MANIFEST\"\n \"rundll32.exe\" trying to access non-existent file \"C:\\76816BA1A506EBA7151BCE38B3E6D673362355063C8FD92444B6BEC5AD106C21.DLL.124.MANIFEST\"",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69869051,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.73852985,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70025145,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Shows ability to deobfuscate/decode files or information: The analysis shows use of encryption and can be used to decode file or information. Matched sigs: Contains XOR operation loops [Stream disassembly]",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.78594799,
+                "Label": 1
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.8167093,
+                "Label": 1
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.77466304,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Found potential IP address in binary/memory: \"5.8.9.7\"",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.76166019,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.77070481,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.73243296,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to pass information to a window procedure (API string): Found reference to API \"CallWindowProcW\" (Indicator: \"CallWindowProc\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"CallWindowProcW\" (Indicator: \"CallWindowProc\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.70995269,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76455437,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71344323,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve/modify process thread (API string): Found reference to API \"CreateThreadpoolTimer\" (Indicator: \"CreateThread\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"CreateThreadpoolWait\" (Indicator: \"CreateThread\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"CreateThreadpoolWork\" (Indicator: \"CreateThread\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"CreateThreadpoolTimer\" (Indicator: \"CreateThread\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"CreateThreadpoolWait\" (Indicator: \"CreateThread\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"CreateThreadpoolWork\" (Indicator: \"CreateThread\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68625461,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.74721324,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70544576,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Tries to access non-existent files (executable): \"rundll32.exe\" trying to access non-existent file \"C:\\Windows\\System32\\WOW64LOG.DLL\"\n \"rundll32.exe\" trying to access non-existent file \"C:\\PDH.DLL\"\n \"rundll32.exe\" trying to access non-existent file \"C:\\pdh.dll\"",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69356635,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.72459652,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.68038176,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Queries registry keys: \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"USEFILTER\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"DISABLEHEAPLOOKASIDE\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"FRONTENDHEAPDEBUGOPTIONS\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"SHUTDOWNFLAGS\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"UNLOADEVENTTRACEDEPTH\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"MAXLOADERTHREADS\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"USEIMPERSONATEDDEVICEMAP\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"TRACINGFLAGS\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"CFGOPTIONS\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"MINIMUMSTACKCOMMITINBYTES\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"BREAKONINITIALIZEPROCESSFAILURE\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"KEEPACTIVATIONCONTEXTSALIVE\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"TRACKACTIVATIONCONTEXTRELEASES\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"MAXDEADACTIVATIONCONTEXTS\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"GLOBALFLAG\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"CWDILLEGALINDLLSEARCH\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\SESSION MANAGER\"; Key: \"RESOURCEPOLICIES\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"DEBUGPROCESSHEAPONLY\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WOW64\\X86\"; Key: \"RUNDLL32.EXE\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"QUERYVAL\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WOW64\\X86\"; Key: \"\"; Value: \"\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69394835,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.72764907,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69917943,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to read software policies: \"rundll32.exe\" (Path: \"HKLM\\SOFTWARE\\POLICIES\\MICROSOFT\\WINDOWS\\SAFER\\CODEIDENTIFIERS\"; Key: \"TRANSPARENTENABLED\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.72556905,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75944382,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72449516,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Sample file has high entropy (likely encrypted/compressed content): Sample file \"sample.bin\" has high entropy 7.154742030739025",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.75808489,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75386507,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72439771,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to access device drivers: Found string \":\\WINDOWS\\system32\\DRIVERS\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00000368.00000000.173884.009C0000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DriverStore\\FileRepository\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00000368.00000000.173884.009C0000.00000004.mdmp\")\n Found string \"\\Device\\HarddiskVolume2\\Windows\\SysWOW64\\rundll32.exe\" (Indicator: \"\\Device\\\"; Source: \"00000000-00000368.00000000.173884.009C0000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DRIVERS\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00001356.00000000.177745.00900000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DriverStore\\FileRepository\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00001356.00000000.177745.00900000.00000004.mdmp\")\n Found string \"\\Device\\HarddiskVolume2\\Windows\\SysWOW64\\rundll32.exe\" (Indicator: \"\\Device\\\"; Source: \"00000000-00001356.00000000.177745.00900000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DRIVERS\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00001576.00000000.171956.030D0000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DriverStore\\FileRepository\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00001576.00000000.171956.030D0000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DRIVERS\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00002612.00000000.179672.03120000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DriverStore\\FileRepository\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00002612.00000000.179672.03120000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DRIVERS\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00003264.00000000.181601.03360000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DriverStore\\FileRepository\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00003264.00000000.181601.03360000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DRIVERS\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00003288.00000000.183533.00CE0000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DriverStore\\FileRepository\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00003288.00000000.183533.00CE0000.00000004.mdmp\")\n Found string \"\\Device\\HarddiskVolume2\\Windows\\SysWOW64\\rundll32.exe\" (Indicator: \"\\Device\\\"; Source: \"00000000-00003288.00000000.183533.00CE0000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DRIVERS\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00003424.00000000.175816.00450000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DriverStore\\FileRepository\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00003424.00000000.175816.00450000.00000004.mdmp\")\n Found string \"\\Device\\HarddiskVolume2\\Windows\\SysWOW64\\rundll32.exe\" (Indicator: \"\\Device\\\"; Source: \"00000000-00003424.00000000.175816.00450000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DRIVERS\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00003560.00000000.185463.00CF0000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DriverStore\\FileRepository\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00003560.00000000.185463.00CF0000.00000004.mdmp\")\n Found string \"\\Device\\HarddiskVolume2\\Windows\\SysWOW64\\rundll32.exe\" (Indicator: \"\\Device\\\"; Source: \"00000000-00003560.00000000.185463.00CF0000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DRIVERS\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00003568.00000000.175819.00880000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DriverStore\\FileRepository\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00003568.00000000.175819.00880000.00000004.mdmp\")\n Found string \"\\Device\\HarddiskVolume2\\Windows\\SysWOW64\\rundll32.exe\" (Indicator: \"\\Device\\\"; Source: \"00000000-00003568.00000000.175819.00880000.00000004.mdmp\")\n Found string \":\\WINDOWS\\system32\\DRIVERS\" (Indicator: \"system32\\drivers\"; Source: \"00000000-00003596.00000000.175819.03190000.00000004.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68984893,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.72328328,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69124599,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to query system locale (API string): Found reference to API \"EnumSystemLocalesW\" (Indicator: \"EnumSystemLocales\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetUserDefaultLCID\" (Indicator: \"GetUserDefaultLCID\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetLocaleInfoW\" (Indicator: \"GetLocaleInfo\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetLocaleInfoEx\" (Indicator: \"GetLocaleInfo\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"EnumSystemLocalesEx\" (Indicator: \"EnumSystemLocales\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetUserDefaultLocaleName\" (Indicator: \"GetUserDefaultLocaleName\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetLocaleInfoEx\" (Indicator: \"GetLocaleInfo\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"EnumSystemLocalesEx\" (Indicator: \"EnumSystemLocales\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetUserDefaultLocaleName\" (Indicator: \"GetUserDefaultLocaleName\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetLocaleInfoW\" (Indicator: \"GetLocaleInfo\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetUserDefaultLCID\" (Indicator: \"GetUserDefaultLCID\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"EnumSystemLocalesW\" (Indicator: \"EnumSystemLocales\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68233015,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.7514968,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70349529,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to modify registry key/value (API string): Found reference to API \"RegSetValueExW\" (Indicator: \"RegSetValue\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"RegSetValueExW\" (Indicator: \"RegSetValue\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.70077995,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75554281,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70860338,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Calls an API typically used to retrieve function addresses: details too long to display",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.74325587,
+                "Label": 1
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.79693842,
+                "Label": 1
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.73206472,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Calls an API typically used to get system version information: \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00008932)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00005036)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00007148)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00001576)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00008812)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00000368)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00008404)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00008808)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00003628)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00003568)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00003424)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00003596)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00001356)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00005268)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00004332)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00008200)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00002612)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00004252)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00004324)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00006872)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00003264)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00004360)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00004544)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00005736)\n \"rundll32.exe\" called \"RtlGetVersion\" with parameter 140100000a00000000000000ab3f00000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (UID: 00000000-00003288)",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.71214719,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.73771552,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70117347,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Reads information about supported languages: \"rundll32.exe\" (Path: \"HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\NLS\\CUSTOMLOCALE\"; Key: \"EMPTY\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.71278986,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.73818527,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71582841,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Loads the Bcrypt module DLL: \"rundll32.exe\" loaded module \"%WINDIR%\\SysWOW64\\bcryptprimitives.dll\" at 76380000\n \"rundll32.exe\" loaded module \"%WINDIR%\\SysWOW64\\bcrypt.dll\" at 73060000",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.72984971,
+                "Label": 1
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75006848,
+                "Label": 1
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70205027,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Reads the active computer name: \"rundll32.exe\" (Path: \"HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\COMPUTERNAME\\ACTIVECOMPUTERNAME\"; Key: \"COMPUTERNAME\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.6984833,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.71574325,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70091386,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to disable/close registry key (API string): Found reference to API \"RegCloseKey\" (Indicator: \"RegCloseKey\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"RegCloseKey\" (Indicator: \"RegCloseKey\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68433899,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.7497101,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69542578,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to inject code into another process (API string): Found reference to API \"VirtualAlloc\" (Indicator: \"VirtualAlloc\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"VirtualFree\" (Indicator: \"VirtualFree\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"CreateThreadpoolTimer\" (Indicator: \"CreateThread\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"CreateThreadpoolWait\" (Indicator: \"CreateThread\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"CreateThreadpoolWork\" (Indicator: \"CreateThread\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"CreateThreadpoolTimer\" (Indicator: \"CreateThread\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"CreateThreadpoolWait\" (Indicator: \"CreateThread\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"CreateThreadpoolWork\" (Indicator: \"CreateThread\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"VirtualAlloc\" (Indicator: \"VirtualAlloc\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"VirtualFree\" (Indicator: \"VirtualFree\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.72922821,
+                "Label": 1
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.79947836,
+                "Label": 1
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.74406499,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve/open a process (API string): Found reference to API \"GetProcessHeap\" (Indicator: \"GetProcessHeap\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetProcessHeap\" (Indicator: \"GetProcessHeap\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"NtOpenProcessToken\" (Indicator: \"OpenProcess\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetProcessHeap\" (Indicator: \"GetProcessHeap\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.71446167,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.77118526,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.7122285,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Opens registry keys: \"rundll32.exe\" (Access type: \"OPEN\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\"; Key: \"\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"OPEN\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\IMAGE FILE EXECUTION OPTIONS\\RUNDLL32.EXE\"; Key: \"\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"OPEN\"; Path: \"HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\SESSION MANAGER\\SEGMENT HEAP\"; Key: \"\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"OPEN\"; Path: \"HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\SESSION MANAGER\"; Key: \"\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"OPEN\"; Path: \"HKLM\\SOFTWARE\\MICROSOFT\\WOW64\\X86\"; Key: \"\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"OPEN\"; Path: \"HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\SAFEBOOT\\OPTION\"; Key: \"\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"OPEN\"; Path: \"HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\SRP\\GP\\DLL\"; Key: \"\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"OPEN\"; Path: \"HKLM\\SOFTWARE\\POLICIES\\MICROSOFT\\WINDOWS\\SAFER\\CODEIDENTIFIERS\"; Key: \"\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"OPEN\"; Path: \"HKCU\\SOFTWARE\\POLICIES\\MICROSOFT\\WINDOWS\\SAFER\\CODEIDENTIFIERS\"; Key: \"\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"OPEN\"; Path: \"HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\FILESYSTEM\"; Key: \"\"; Value: \"\")\n \"rundll32.exe\" (Access type: \"OPEN\"; Path: \"HKLM\\SOFTWARE\\WOW6432NODE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\APPCOMPATFLAGS\"; Key: \"\"; Value: \"\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.70441878,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.73409251,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70638645,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to enumerate process and/or its information (API string): Found reference to API \"GetCurrentProcessorNumber\" (Indicator: \"GetCurrentProcess\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetCurrentProcessId\" (Indicator: \"GetCurrentProcess\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetCurrentProcess\" (Indicator: \"GetCurrentProcess\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetModuleHandleW\" (Indicator: \"GetModuleHandle\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetModuleHandleExW\" (Indicator: \"GetModuleHandle\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetEnvironmentStringsW\" (Indicator: \"GetEnvironmentStrings\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetCurrentProcess\" (Indicator: \"GetCurrentProcess\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetModuleHandleExW\" (Indicator: \"GetModuleHandle\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetCurrentProcessId\" (Indicator: \"GetCurrentProcess\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetModuleHandleW\" (Indicator: \"GetModuleHandle\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetCurrentProcessorNumber\" (Indicator: \"GetCurrentProcess\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetEnvironmentStringsW\" (Indicator: \"GetEnvironmentStrings\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetCurrentProcess\" (Indicator: \"GetCurrentProcess\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetModuleHandleW\" (Indicator: \"GetModuleHandle\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetCurrentProcessId\" (Indicator: \"GetCurrentProcess\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetModuleHandleExW\" (Indicator: \"GetModuleHandle\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69633736,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75722968,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71239264,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve file time (API string): Found reference to API \"GetSystemTimeAsFileTime\" (Indicator: \"GetSystemTimeAsFileTime\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetSystemTimeAsFileTime\" (Indicator: \"GetSystemTimeAsFileTime\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetSystemTimeAsFileTime\" (Indicator: \"GetSystemTimeAsFileTime\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68949248,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76262181,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69999077,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve the command-line string for the current process (API string): Found reference to API \"GetCommandLineA\" (Indicator: \"GetCommandLine\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetCommandLineW\" (Indicator: \"GetCommandLine\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetCommandLineW\" (Indicator: \"GetCommandLine\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetCommandLineA\" (Indicator: \"GetCommandLine\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetCommandLineW\" (Indicator: \"GetCommandLine\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.67663516,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75412574,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69271695,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "The input sample possibly contains the RDTSCP instruction: Found VM detection artifact \"RDTSCP trick\" in \"sample.bin\" (Offset: 22322)",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.75750706,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76680381,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.74617333,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to delete registry key/value (API string): Found reference to API \"RegDeleteKeyW\" (Indicator: \"RegDeleteKey\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"RegDeleteValueW\" (Indicator: \"RegDeleteValue\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"RegDeleteKeyTransactedW\" (Indicator: \"RegDeleteKeyTransacted\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"RegDeleteKeyTransactedW\" (Indicator: \"RegDeleteKey\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"RegDeleteKeyExW\" (Indicator: \"RegDeleteKey\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"RegDeleteKeyTransactedW\" (Indicator: \"RegDeleteKeyTransacted\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"RegDeleteKeyTransactedW\" (Indicator: \"RegDeleteKey\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"RegDeleteKeyExW\" (Indicator: \"RegDeleteKey\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"RegDeleteKeyW\" (Indicator: \"RegDeleteKey\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"RegDeleteValueW\" (Indicator: \"RegDeleteValue\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.68689976,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.74611434,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69735777,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Shows ability to use encryption for command and control traffic: The analysis shows use of encryption\n use of http/https that can be used to send encrypted data on command and control server. Matched sigs: Contains XOR operation loops [Stream disassembly]\n Matched sigs: Found potential URL in binary/memory\n Matched sigs: Found potential IP address in binary/memory",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.74547639,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.79367144,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72877022,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains XOR operation loops [Stream disassembly]: Assembly shows XOR instruction xor eax\n ebp in Stream UID: 41876-116-1002C64C\n Assembly shows XOR instruction xor ecx\n ebp in Stream UID: 41876-116-1002C64C\n Assembly shows XOR instruction xor eax\n ebp in Stream UID: 41876-83-100261CC\n Assembly shows XOR instruction xor edi\n edx in Stream UID: 41876-83-100261CC\n Assembly shows XOR instruction xor ebx\n edx in Stream UID: 41876-83-100261CC\n Assembly shows XOR instruction xor eax\n edx in Stream UID: 41876-83-100261CC\n Assembly shows XOR instruction xor esi\n edx in Stream UID: 41876-83-100261CC\n Assembly shows XOR instruction xor edx\n dword ptr [1004E008h] in Stream UID: 41876-83-100261CC\n Assembly shows XOR instruction xor ecx\n ebp in Stream UID: 41876-83-100261CC",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.72467493,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.73940895,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.76024358,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve address of exported function from a DLL (API string): Found reference to API \"GetProcAddress\" (Indicator: \"GetProcAddress\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetProcAddress\" (Indicator: \"GetProcAddress\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"GetProcAddress\" (Indicator: \"GetProcAddress\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.72418274,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.80729429,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72229548,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to capture screen (API string): Found reference to API \"CreateCompatibleDC\" (Indicator: \"CreateCompatibleDC\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"CreateCompatibleBitmap\" (Indicator: \"CreateCompatibleBitmap\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"BitBlt\" (Indicator: \"BitBlt\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetDesktopWindow\" (Indicator: \"GetDesktopWindow\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetDC\" (Indicator: \"GetDC\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"GetDesktopWindow\" (Indicator: \"GetDesktopWindow\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"GetDC\" (Indicator: \"GetDC\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"CreateCompatibleBitmap\" (Indicator: \"CreateCompatibleBitmap\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"CreateCompatibleDC\" (Indicator: \"CreateCompatibleDC\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"BitBlt\" (Indicator: \"BitBlt\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69429837,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.74161547,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70423047,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to determine if process is running under WOW64 (API string): Found reference to API \"IsWow64Process2\" (Indicator: \"IsWow64Process\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.70947268,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.74954916,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.70404427,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Able to visualize and control listed components (API string): Found reference to API \"SendMessageW\" (Indicator: \"sendmessage\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"InSendMessage\" (Indicator: \"sendmessage\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"InSendMessage\" (Indicator: \"sendmessage\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"SendMessageW\" (Indicator: \"sendmessage\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69176065,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.7724871,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.71257892,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Reads the windows installation language: \"rundll32.exe\" (Path: \"HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\NLS\\LANGUAGE\"; Key: \"INSTALLLANGUAGEFALLBACK\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69730241,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.71747826,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.7025845,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Found potential URL in binary/memory: Pattern match: \"http://www.w3.org/2001/xmlschema-instance\"\n Heuristic match: \".wsf;.ws\"\n Heuristic match: \"/tpq.tp\"\n Heuristic match: \"js;.jse;.wsf;.ws\"",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.67704688,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.71381654,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69565935,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to find and load resources of specific modules (API string): Found reference to API \"SizeofResource\" (Indicator: \"SizeofResource\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"FindResourceW\" (Indicator: \"FindResource\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"LoadResource\" (Indicator: \"LoadResource\"; File: \"76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21\")\n Found reference to API \"LoadResource\" (Indicator: \"LoadResource\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"SizeofResource\" (Indicator: \"SizeofResource\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")\n Found reference to API \"FindResourceW\" (Indicator: \"FindResource\"; Source: \"00000000-00007596.00000000.185467.72AAA000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.72483015,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.76796298,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69566187,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Contains ability to retrieve information about the current system (API string): Found reference to API \"NtQuerySystemInformation\" (Indicator: \"QuerySystemInformation\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")\n Found reference to API \"RtlNtStatusToDosError\" (Indicator: \"RtlNtStatusToDosError\"; Source: \"00000000-00005268.00000000.177749.00CA9000.00000002.mdmp\")",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.69885787,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75664012,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.69988674,
+                "Label": 0
+            }
+        ]
+    },
+    {
+        "Indicator": "Shows ability to obfuscate file or information: The analysis contains indicators for cyrpto or data obfuscation(base64/decrypt) which can hide information. Matched sigs: Contains ability to import cryptographic keys (seen in ransomware)\n Matched sigs: Contains ability to use Microsoft's Enhanced Cryptographic Provider\n Matched sigs: Contains ability to perform decryption (API string)\n Matched sigs: Sample file has high entropy (likely encrypted/compressed content)\n Matched sigs: Contains XOR operation loops [Stream disassembly]",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.72595074,
+                "Label": 1
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.80584019,
+                "Label": 1
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72507278,
+                "Label": 1
+            }
+        ]
+    },
+    {
+        "Indicator": "Imports GetCommandLine API: Observed import api \"GetCommandLineA\" which can \"Retrieves the command-line string for the current process\" [Source: 76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21]",
+        "Threshold": 0.0,
+        "Matched_Reports": [
+            {
+                "Report": "The function then allocates memory based on the size of the resource and goes through some decryption loops.",
+                "Score": 0.67845525,
+                "Label": 0
+            },
+            {
+                "Report": "The payload conceals its capabilities by hiding information that is used for static analysis. The names of the API functions are stored in the code after they were hashed. Their address is located in run-time instead of using the Import Address Table. The strings are encrypted inside the file.",
+                "Score": 0.75229743,
+                "Label": 0
+            },
+            {
+                "Report": "The code is obfuscated using Control Flow Flattening, which works as follows",
+                "Score": 0.72019941,
+                "Label": 0
+            }
+        ]
+    }
+]

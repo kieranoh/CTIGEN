@@ -1,0 +1,23 @@
+{
+    "FUN_00402d30": [
+        "Using CreateToolhelp32Snapshot, Process32FirstW, and Process32NextW to investigate all of the running processes on the system, Babuk can iterate and search for processes that need to be closed.",
+        "It will execute TerminateProcess to terminate any found processes. Here is the list of processes to be closed: sql.exe, oracle.exe, ocssd.exe, dbsnmp.exe, synctime.exe, agntsvc.exe, isqlplussvc.exe, xfssvccon.exe, mydesktopservice.exe, ocautoupds.exe, encsvc.exe, firefox.exe, tbirdconfig.exe, mydesktopqos.exe, ocomm.exe, dbeng50.exe, sqbcoreservice.exe, excel.exe, infopath.exe, msaccess.exe, mspub.exe, onenote.exe, outlook.exe, powerpnt.exe, steam.exe, thebat.exe, thunderbird.exe, visio.exe, winword.exe, wordpad.exe, notepad.exe"
+    ],
+    "FUN_00402a30": [
+        "Babuk attempts to remove shadow duplicates prior to and following encryption.",
+        "Before invoking ShellExecuteW to execute the following command: cmd.exe /c vssadmin.exe delete shadows /all /quiet",
+        "Wow64DisableWow64FsRedirection is called to disable file system redirection.",
+        "After removing the shadow copies, Babuk verifies whether the system is powered by a 64-bit processor. If so, Wow64RevertWow64FsRedirection is invoked to re-enable file system redirection."
+    ],
+    "FUN_00402ae0": [
+        "Babuk will call EnumDependentServicesA prior to terminating a service to retrieve the name and status of each dependent service.",
+        "It will then invoke ControlService with the control code SERVICE_CONTROL_STOP to halt them prior to terminating the primary service in the same manner. List of sevices: vss, sql, svc$, memtas, mepocs, sophos, veeam, backup, GxVss, GxBlr, GxFWD, GxCVD, GxCIMgr, DefWatch, ccEvtMgr, ccSetMgr, SavRoam, RTVscan, QBFCService, QBIDPService, Intuit.QuickBooks.FCS, QBCFMonitorService, YooBackup, YooIT, zhudongfangyu, sophos, stc_raw_agent, VSNAPVSS, VeeamTransportSvc, VeeamDeploymentService, VeeamNFSSvc, veeam, PDVFSService, BackupExecVSSProvider, BackupExecAgentAccelerator, BackupExecAgentBrowser, BackupExecDiveciMediaService, BackupExecJobEngine, BackupExecManagementService, BackupExecRPCService, AcrSch2Svc, AcronisAgent, CASAD2DWebSvc, CAARCUpdateSvc"
+    ],
+    "FUN_004034b0": [
+        "Babuk generates four random buffers using RtlGenRandom: RtlGenRandom - This function is available as a resource named SystemFunction036 in Advapi32.dll."
+    ],
+    "FUN_00404620": [
+        "It navigates through each directory by using the FindFirstFileW and FindNextFileW methods in order to search for files and subdirectories.",
+        "When it comes across a file, it will perform a check to see if the file name is How To Restore Your data.txt or if the file extension is __NIST_K571__."
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "FUN_00401f80": [
+        "It uses GetProcAddress to find the address of VirtualAllocExNuma and calls it to allocate memory for the payload.",
+        "It calculates the parameters for VirtualAllocExNuma during runtime, to hide the allocation of RWX memory.",
+        "The function atoi is being used to convert the string “64” to int, which is PAGE_EXECUTE_READWRITE.",
+        "Also, the string “8192” is converted to 0x3000 which means the memory is allocated with the flags MEM_COMMIT and MEM_RESERVE.",
+        "The payload is then copied from the .data section to the RWX memory (that is where our breakpoint hit).",
+        "The decryption routine is being called and then the shellcode is being executed."
+    ]
+}
