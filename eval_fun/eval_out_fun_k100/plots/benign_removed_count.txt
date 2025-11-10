@@ -1,23 +1,23 @@
 Per-file PR: 0123b26df3c79bac0a3fda79072e36c159cfd1824ae3fd4b7f9dea9bda9c7909.json
-  max_recall=0.8333, threshold=0.0648949999998649, precision=0.1163, benign_removed=15
+  max_recall=0.8333, threshold=0.0292039999999999, precision=0.1220, benign_removed=17
 
 Per-file PR: 249269aae1e8a9c52f7f6ae93eb0466a5069870b14bf50ac22dc14099c2655db.json
-  max_recall=1.0000, threshold=0.1125339999999125, precision=0.0526, benign_removed=88
+  max_recall=1.0000, threshold=0.04341, precision=0.0109, benign_removed=15
 
 Per-file PR: 74f58ab637713ca0463c3842cd71176a887b132d13d32f9841c03f59c359c6d7.json
-  max_recall=0.8571, threshold=0.2, precision=0.0275, benign_removed=1
+  max_recall=0.8571, threshold=0.200098, precision=0.0274, benign_removed=0
 
 Per-file PR: 76816ba1a506eba7151bce38b3e6d673362355063c8fd92444b6bec5ad106c21.json
-  max_recall=1.0000, threshold=0.1981199999999981, precision=0.0022, benign_removed=340
+  max_recall=1.0000, threshold=0.191794, precision=0.0028, benign_removed=447
 
 Per-file PR: 8203c2f00ecd3ae960cb3247a7d7bfb35e55c38939607c85dbdb5c92f0495fa9.json
-  max_recall=0.8000, threshold=0.0553989999998554, precision=0.3636, benign_removed=3
+  max_recall=0.8000, threshold=0.00281, precision=0.3077, benign_removed=1
 
 Per-file PR: aa34ecb2922ce8a8066358a1d0ce0ff632297037f8b528e3a37cd53477877e47.json
-  max_recall=1.0000, threshold=0.0596229999998596, precision=0.0039, benign_removed=503
+  max_recall=1.0000, threshold=0.056232, precision=0.0020, benign_removed=255
 
 Per-file PR: afa8a32ec29a31f152ba20a30eb483520fe50f2dce6c9aa9135d88f7c9c511d7.json
-  max_recall=0.0000, threshold=0.0003419999998003, precision=0.0000, benign_removed=58
+  max_recall=0.0000, threshold=0.200098, precision=0.0000, benign_removed=56
 
 Overall (All Files) PR
-  max_recall=0.7826, threshold=0.1961409999999961, precision=0.0146, benign_removed=789
+  max_recall=0.7826, threshold=0.00281, precision=0.0099, benign_removed=205
